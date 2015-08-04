@@ -15,3 +15,37 @@ body, input, textarea {
 #admin-menu {
   font-size: 12px;
 }
+
+.node-type-product .product-data {
+  margin-bottom: 15px;
+}
+.node-type-product .cloud-zoom-container {
+  margin-bottom: 20px;
+}
+.node-type-product .cloud-zoom-container #wrap {
+  float: right !important;
+}
+.node-type-product .cloud-zoom-container .mousetrap {
+  display: inherit !important;
+}
+.node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs {
+  clear: none;
+  float: none !important;
+}
+.node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery {
+  border: 1px solid #5b5b5b;
+  display: inline-block;
+  float: none;
+  margin: 5px 0;
+}
+
+#block-menu-menu-submenu ul.menu {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+#block-menu-menu-submenu ul.menu li {
+  list-style: none;
+  list-style-image: none;
+  float: left;
+}

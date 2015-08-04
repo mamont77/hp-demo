@@ -107,6 +107,20 @@
     hide($content['links']);
     hide($content['field_image']);
     hide($content['field_tags']);
+    ?>
+    <div class="row product-data">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <?php
+            print render($content['field_image']);
+            ?>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <?php
+            print render($content['field_product_description']);
+            ?>
+        </div>
+    </div>
+    <?php
     print render($content);
     ?>
     <?php if (!empty($content['field_tags'])

@@ -1,6 +1,26 @@
 @import "compass";
 @import "compass/css3";
 
+$url-color: #1a61c6;
+$price-color: #aa2a00;
+$grey-color: #555555;
+$green-color: #298c00;
+//$orange-color: #dd7c00;
+$header-bg-color: #9d9338;
+$best-bg-color: #dd7c00;
+$subheader-color: #cc6600;
+$footer-link-color: #ddd79e;
+
+$select-color-1: #292929;
+$select-color-2: #a40912;
+$select-color-3: #64b714;
+$select-color-4: #234171;
+$select-color-5: #fffd91;
+$select-color-6: #8724e3;
+
+
+
+
 @font-face {
   /* header #3 (Bold) */
   font-family: "Helvetica Neue hvcn";
@@ -18,6 +38,32 @@ body, input, textarea {
 
 #admin-menu {
   font-size: 12px;
+}
+
+
+.node-type-product {
+  .product-data {
+    margin-bottom: 15px;
+  }
+  .cloud-zoom-container {
+    margin-bottom: 20px;
+    #wrap {
+      float: right !important;
+    }
+    .mousetrap {
+      display: inherit !important;
+    }
+    .cloud-zoom-gallery-thumbs {
+      clear: none;
+      float: none !important;
+      .cloud-zoom-gallery {
+        border: 1px solid #5b5b5b;
+        display: inline-block;
+        float: none;
+        margin: 5px 0;
+      }
+    }
+  }
 }
 
 @import "blocks";
