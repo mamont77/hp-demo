@@ -109,15 +109,39 @@
     hide($content['field_tags']);
     ?>
     <div class="row product-data">
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <?php
-            print render($content['field_image']);
-            ?>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="clearfix">
+                <?php
+                print render($content['field_image']);
+                ?>
+            </div>
+            <div class="roll-pver">Roll over image to zoom in</div>
+
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <?php
-            print render($content['field_product_description']);
-            ?>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="clearfix">
+
+                <?php
+                print render($content['field_product_description']);
+                ?>
+            </div>
+            <div class="rate">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <a href="#">1,021</a> customer reviews | <a href="#">225</a>
+                answered questions
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="add-to-card-wrapper">
+                <a class="btn btn-default btn-lg" href="/node/246">Add to
+                    card</a>
+            </div>
+
         </div>
     </div>
     <?php
