@@ -1,0 +1,42 @@
+name = Groupe Studyrama CDN
+description = A Bootstrap Sub-theme. Uses http://bootstrapcdn.com for all styles and JavaScript. No source files or compiling is necessary and is recommended for simple sites or beginners.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted Left'
+regions[highlighted_right] = 'Highlighted Right'
+regions[help]           = 'Help'
+regions[block_1]        = 'Block 1 Area'
+regions[block_2]        = 'Block 2 Area'
+regions[block_3]        = 'Block 3 Area'
+regions[block_4]        = 'Block 4 Area'
+regions[block_5]        = 'Block 5 Area'
+regions[block_6]        = 'Block 6 Area'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = addons/bootstrap/jquery.smartmenus.bootstrap.css
+
+stylesheets[all][] = css/styles.css
+scripts[] = 'js/jquery.smartmenus.js'
+scripts[] = 'addons/bootstrap/jquery.smartmenus.bootstrap.js'
+scripts[] = 'js/jquery.jflip-0.4.min.js'
+scripts[] = 'js/imagesloaded.pkgd.min.js'
+scripts[] = 'js/isotope.pkgd.min.js'
+scripts[] = 'js/scripts.js'
+

@@ -1,0 +1,253 @@
+@import "compass";
+@import "compass/css3";
+
+$colorFooter: #fff;
+$colorLinks: #003a5a;
+$bgFooter: #003a5a;
+$bgHighlight: #016388;
+$textColor: #003b5d;
+
+//@font-face {
+//  /* header #1 */
+//  font-family: "Helvetica Neue thcn";
+//  font-weight: normal;
+//  font-style: normal;
+//  src: url("../fonts/helveticaneueltstd-thcn-webfont.eot");
+//  src: url("../fonts/helveticaneueltstd-thcn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltstd-thcn-webfont.woff") format("woff"), url("../fonts/helveticaneueltstd-thcn-webfont.ttf") format("truetype"), url("../fonts/helveticaneueltstd-thcn-webfont.svg#helvetica_neue_lt_std37ThCn") format("svg");
+//}
+//
+//@font-face {
+//  /* header #2 */
+//  font-family: "Helvetica Neue bdcn";
+//  font-weight: normal;
+//  font-style: normal;
+//  src: url("../fonts/helveticaneueltstd-bdcn-webfont.eot");
+//  src: url("../fonts/helveticaneueltstd-bdcn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltstd-bdcn-webfont.woff") format("woff"), url("../fonts/helveticaneueltstd-bdcn-webfont.ttf") format("truetype"), url("../fonts/helveticaneueltstd-bdcn-webfont.svg#helvetica_neue_lt_std77BdCn") format("svg");
+//}
+
+@font-face {
+  /* header #3 (Bold) */
+  font-family: "Helvetica Neue hvcn";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/helveticaneueltstd-hvcn-webfont.eot");
+  src: url("../fonts/helveticaneueltstd-hvcn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltstd-hvcn-webfont.woff") format("woff"), url("../fonts/helveticaneueltstd-hvcn-webfont.ttf") format("truetype"), url("../fonts/helveticaneueltstd-hvcn-webfont.svg#helvetica_neue_lt_std87HvCn") format("svg");
+}
+
+@font-face {
+  /* header #4 */
+  font-family: "Helvetica Neue cn";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/helveticaneueltstd-cn-webfont.eot");
+  src: url("../fonts/helveticaneueltstd-cn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneueltstd-cn-webfont.woff") format("woff"), url("../fonts/helveticaneueltstd-cn-webfont.ttf") format("truetype"), url("../fonts/helveticaneueltstd-cn-webfont.svg#helvetica_neue_lt_std57Cn") format("svg");
+}
+
+@font-face {
+  /* header #5 */
+  font-family: "Din Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/din-regular-webfont.eot");
+  src: url("../fonts/din-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/din-regular-webfont.woff") format("woff"), url("../fonts/din-regular-webfont.ttf") format("truetype"), url("../fonts/din-regular-webfont.svg#dinregular") format("svg");
+}
+
+body, input, textarea {
+  font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: $textColor;
+}
+
+#admin-menu {
+  font-size: 12px;
+}
+
+header,
+footer {
+  font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+}
+
+.navbar .container {
+  width: 95%;
+}
+
+a {
+  color: $colorLinks;
+  &:hover,
+  &:focus {
+    color: $colorLinks;
+  }
+  &:hover {
+  }
+}
+
+.main-container {
+  a {
+    color: $colorLinks;
+    @include transition(opacity 0.5s linear);
+    &:hover,
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.footer .container,
+.main-container.container {
+  max-width: 940px;
+}
+
+.front .main-container.container {
+  max-width: 990px;
+}
+
+#content {
+  padding: 0 52px;
+}
+
+.front #content {
+  padding: 0 15px;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
+
+@import "ovveride_navbar";
+
+.breadcrumb {
+  @include border-radius(0);
+  background: transparent;
+  padding: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  a {
+  }
+}
+
+.page-header {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+  padding: 0;
+  margin: 0;
+  @include border-radius(0);
+  background: none transparent;
+}
+
+.node {
+  .field-name-field-image {
+    margin-bottom: 15px;
+    .field-item {
+      margin-bottom: 15px;
+    }
+    .field-items {
+      &.many {
+        .field-item {
+          width: 49%;
+          padding: 0 5px;
+          &.even {
+
+          }
+        }
+      }
+    }
+  }
+
+  .field-name-body {
+    text-align: justify;
+  }
+}
+
+.field-name-field-url {
+  margin-bottom: 15px;
+}
+
+.field-name-field-attachment,
+.views-field-field-attachment {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: right;
+  .file {
+    .file-icon {
+      display: none;
+    }
+    a {
+      background: url(../images/icon-pdf.png) 0 0 no-repeat;
+      display: inline-block;
+      overflow: hidden;
+      text-indent: -9999px;
+      width: 39px;
+      height: 40px;
+      text-decoration: none;
+    }
+  }
+}
+
+.pagination {
+  @include border-radius(0);
+  > li > a, > li > span {
+    color: $colorLinks;
+  }
+  > li:first-child > a,
+  > li:first-child > span,
+  > li:last-child > a,
+  > li:last-child > span {
+    @include border-radius(0);
+  }
+  > .active > a, > .active > span, > .active > a:hover, > .active > span:hover, > .active > a:focus, > .active > span:focus {
+    background: $bgFooter;
+  }
+}
+
+.footer {
+  width: 100%;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: none;
+  color: $colorFooter;
+  background-color: $bgFooter;
+  font-weight: bold;
+  font-size: 12px;
+  li {
+    background: transparent;
+    display: inline-block;
+    a {
+      color: $colorFooter;
+      background: transparent;
+      &:hover,
+      &.active,
+      &:focus {
+        background: $bgHighlight;
+      }
+    }
+  }
+  .copyright {
+    padding: 10px 10px;
+  }
+  .region-footer {
+    .addresse {
+      float: right;
+      padding: 10px 10px;
+    }
+    .block-menu {
+      display: inline-block;
+    }
+  }
+}
+
+@import "blocks";
+@import "views";
+@import "media";
