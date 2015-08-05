@@ -1,8 +1,16 @@
+.block {
+  margin-bottom: 15px;
+}
+
 .sub-menu-wrapper {
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.38);
+  -moz-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.38);
+  box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.38);
 }
+
 #block-menu-menu-submenu {
   ul.menu {
     margin: 0;
@@ -14,11 +22,86 @@
       float: left;
       a {
         color: #000;
+        font-size: 15px;
         &:hover {
           color: #666;
           background-color: transparent;
         }
       }
     }
+  }
+}
+
+#block-block-15 {
+  .block-title {
+    font-size: 16px;
+    color: #a39a9a;
+  }
+  ul {
+    padding: 0;
+
+  }
+  li {
+    list-style: none;
+    list-style-image: none;
+    a {
+      color: #2b3b50;
+    }
+  }
+
+}
+
+$select-color-1: #292929;
+$select-color-2: #a40912;
+$select-color-3: #64b714;
+$select-color-4: #234171;
+$select-color-5: #fffd91;
+$select-color-6: #8724e3;
+
+#block-block-16 {
+  .views-exposed-widget {
+    margin-bottom: 15px;
+    input {
+      margin-right: 5px;
+    }
+  }
+  .colors {
+    margin-bottom: 15px;
+    span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      @include border-radius(3px);
+    }
+
+  }
+  .color-1 {
+    background-color: $select-color-1;
+  }
+  .color-2 {
+    background-color: $select-color-2;
+  }
+  .color-3 {
+    background-color: $select-color-3;
+  }
+  .color-4 {
+    background-color: $select-color-4;
+  }
+  .color-5 {
+    background-color: $select-color-5;
+  }
+  .color-6 {
+    background-color: $select-color-6;
+  }
+  label {
+    font-size: 14px;
+
+  }
+  .option {
+    font-size: 12px;
+    font-weight: normal;
+  }
+  .form-group {
+    margin-bottom: 0;
   }
 }

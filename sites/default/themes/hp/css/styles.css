@@ -35,6 +35,18 @@ a {
   padding-right: 30px;
 }
 
+.navbar-nav > li > a {
+  font-size: 15px;
+}
+
+.navbar #block-search-form {
+  float: none !important;
+}
+.navbar #block-search-form .btn-primary {
+  background-color: #dfd8a4;
+  border-color: #dfd8a4;
+}
+
 .stars {
   width: 80px;
   height: 18px;
@@ -49,6 +61,62 @@ a {
 
 .star-4-5 {
   background-position: -175px -368px;
+}
+
+.field-name-field-best-seller-text {
+  background-image: none !important;
+  border-radius: 3px 0 0 3px;
+  padding: 4px 5px 4px 6px;
+  color: #fff;
+  font-style: normal;
+  position: relative;
+  top: 1px;
+  margin-right: 4px;
+  background-color: #dd7c00;
+  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+.field-name-field-best-seller-text:before {
+  border-bottom-color: #dd7c00 !important;
+  bottom: 0;
+  border-style: dashed;
+  border-width: 6px;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-width: 0;
+  border-bottom: 6px solid #3f6998;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  border-bottom-width: 10px;
+  content: "";
+  position: absolute;
+  right: -5px;
+}
+.field-name-field-best-seller-text:after {
+  border-top-color: #dd7c00 !important;
+  top: 0;
+  border-style: dashed;
+  border-width: 6px;
+  border-color: rgba(255, 255, 255, 0);
+  border-top: 6px solid #3f6998;
+  border-bottom-width: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  border-top-width: 10px;
+  content: "";
+  position: absolute;
+  right: -5px;
 }
 
 .node-type-product .cloud-zoom-container {
@@ -87,61 +155,6 @@ a {
 .node-type-product .field-name-field-from-the-manufacturer,
 .node-type-product .field-name-field-best-seller-text {
   margin-bottom: 15px;
-}
-.node-type-product .field-name-field-best-seller-text {
-  background-image: none !important;
-  border-radius: 3px 0 0 3px;
-  padding: 4px 5px 4px 6px;
-  color: #fff;
-  font-style: normal;
-  position: relative;
-  top: 1px;
-  margin-right: 4px;
-  background-color: #dd7c00;
-  font-size: 12px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  line-height: 14px;
-  font-weight: 400;
-  display: inline-block;
-}
-.node-type-product .field-name-field-best-seller-text:before {
-  border-bottom-color: #dd7c00 !important;
-  bottom: 0;
-  border-style: dashed;
-  border-width: 6px;
-  border-color: rgba(255, 255, 255, 0);
-  border-top-width: 0;
-  border-bottom: 6px solid #3f6998;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  line-height: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  border-bottom-width: 10px;
-  content: "";
-  position: absolute;
-  right: -5px;
-}
-.node-type-product .field-name-field-best-seller-text:after {
-  border-top-color: #dd7c00 !important;
-  top: 0;
-  border-style: dashed;
-  border-width: 6px;
-  border-color: rgba(255, 255, 255, 0);
-  border-top: 6px solid #3f6998;
-  border-bottom-width: 0;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  line-height: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  border-top-width: 10px;
-  content: "";
-  position: absolute;
-  right: -5px;
 }
 .node-type-product .page-header {
   font-size: 21px;
@@ -184,6 +197,21 @@ a {
   background-color: #9d9338;
   padding: 15px 40px 15px 15px;
   text-transform: uppercase;
+  color: #fff;
+}
+
+.pager a {
+  color: #ddd79e;
+}
+.pager li > a,
+.pager li > span {
+  background-color: #9d9338;
+}
+.pager li > a:hover, .pager li > a:active, .pager li > a:focus,
+.pager li > span:hover,
+.pager li > span:active,
+.pager li > span:focus {
+  background-color: #9d9338;
   color: #fff;
 }
 
@@ -267,10 +295,17 @@ a {
     background-color: #9d9338;
   }
 }
+.block {
+  margin-bottom: 15px;
+}
+
 .sub-menu-wrapper {
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.38);
+  -moz-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.38);
+  box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.38);
 }
 
 #block-menu-menu-submenu ul.menu {
@@ -285,8 +320,98 @@ a {
 }
 #block-menu-menu-submenu ul.menu li a {
   color: #000;
+  font-size: 15px;
 }
 #block-menu-menu-submenu ul.menu li a:hover {
   color: #666;
   background-color: transparent;
+}
+
+#block-block-15 .block-title {
+  font-size: 16px;
+  color: #a39a9a;
+}
+#block-block-15 ul {
+  padding: 0;
+}
+#block-block-15 li {
+  list-style: none;
+  list-style-image: none;
+}
+#block-block-15 li a {
+  color: #2b3b50;
+}
+
+#block-block-16 .views-exposed-widget {
+  margin-bottom: 15px;
+}
+#block-block-16 .views-exposed-widget input {
+  margin-right: 5px;
+}
+#block-block-16 .colors {
+  margin-bottom: 15px;
+}
+#block-block-16 .colors span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+#block-block-16 .color-1 {
+  background-color: #292929;
+}
+#block-block-16 .color-2 {
+  background-color: #a40912;
+}
+#block-block-16 .color-3 {
+  background-color: #64b714;
+}
+#block-block-16 .color-4 {
+  background-color: #234171;
+}
+#block-block-16 .color-5 {
+  background-color: #fffd91;
+}
+#block-block-16 .color-6 {
+  background-color: #8724e3;
+}
+#block-block-16 label {
+  font-size: 14px;
+}
+#block-block-16 .option {
+  font-size: 12px;
+  font-weight: normal;
+}
+#block-block-16 .form-group {
+  margin-bottom: 0;
+}
+
+.view-id-front .row {
+  margin-bottom: 15px;
+}
+.view-id-front .views-field-field-image {
+  margin-bottom: 10px;
+}
+.view-id-front .views-field-title {
+  margin-bottom: 10px;
+  font-family: "Trade Gothic", Arial, sans-serif;
+  font-size: 17px;
+}
+.view-id-front .views-field-title a {
+  color: #4f4f4f;
+}
+.view-id-front .views-field-field-price {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #9d9338;
+}
+.view-id-front .views-field-field-best-seller-text {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.view-id-front .views-field-nothing {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
