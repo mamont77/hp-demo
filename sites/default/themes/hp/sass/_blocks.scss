@@ -1,3 +1,8 @@
+.sub-menu-wrapper {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
 #block-menu-menu-submenu {
   ul.menu {
     margin: 0;
@@ -7,6 +12,13 @@
       list-style: none;
       list-style-image: none;
       float: left;
+      a {
+        color: #000;
+        &:hover {
+          color: #666;
+          background-color: transparent;
+        }
+      }
     }
   }
 }

@@ -49,4 +49,24 @@
     }
   };
 
+  /**
+   *
+   * @type {{attach: Function}}
+   */
+  Drupal.behaviors.productImages = {
+    attach: function (context, settings) {
+      var $openAsPopup = $('.open-as-popup', context),
+        $rollWrapper = $('.roll-wrapper', context);
+
+      $openAsPopup.on( 'click', function() {
+        $openAsPopup.attr({
+          'href': $('#cloud-zoom', context).attr('href'),
+          'title': $('h1.page-header', context).text()
+        });
+      });
+
+      $rollWrapper.appendTo($('#wrap'));
+    }
+  };
+
 })(jQuery);

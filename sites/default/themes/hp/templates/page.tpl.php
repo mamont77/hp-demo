@@ -124,14 +124,22 @@
 
                 </nav>
             </div>
-            <?php if (!empty($page['sub_menu'])): ?>
-                <div class="sub-menu"><?php print render(
-                      $page['sub_menu']
-                    ); ?></div>
-            <?php endif; ?>
+
         <?php endif; ?>
+
     </div>
+
 </header>
+<?php if (!empty($page['sub_menu'])): ?>
+  <div class="sub-menu-wrapper">
+      <div class="container">
+          <div class="sub-menu">
+              <?php print render( $page['sub_menu']); ?>
+          </div>
+      </div>
+      <?php endif; ?>
+  </div>
+
 
 <div class="main-container <?php print $container_class; ?>">
 
@@ -161,11 +169,15 @@
             <?php endif; ?>
             <?php if (!empty($breadcrumb)): print $breadcrumb; endif; ?>
             <a id="main-content"></a>
-            <?php print render($title_prefix); ?>
-            <?php if (!empty($title)): ?>
-                <h1 class="page-header"><?php print $title; ?></h1>
-            <?php endif; ?>
-            <?php print render($title_suffix); ?>
+            <?php if(!isset($node->type)
+              || (isset($node->type) && $node->type != 'product')): ?>
+                <?php print render($title_prefix); ?>
+                <?php if (!empty($title)): ?>
+                    <h1 class="page-header"><?php print $title; ?></h1>
+                <?php endif; ?>
+                <?php print render($title_suffix); ?>
+              <?php endif; ?>
+
             <?php print $messages; ?>
             <?php if (!empty($tabs)): ?>
                 <?php print render($tabs); ?>
