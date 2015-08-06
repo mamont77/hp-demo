@@ -323,8 +323,9 @@ a {
 }
 
 #block-block-15 .block-title {
-  font-size: 20px;
-  color: #a39a9a;
+  color: #999;
+  font-size: 17px;
+  padding-top: 6px;
 }
 #block-block-15 ul {
   padding: 0;
@@ -332,7 +333,7 @@ a {
 #block-block-15 li {
   list-style: none;
   list-style-image: none;
-  font-size: 15px;
+  font-size: 12px;
 }
 #block-block-15 li a {
   color: #2b3b50;
@@ -374,11 +375,12 @@ a {
   background-color: #8724e3;
 }
 #block-block-16 label {
-  font-size: 14px;
+  font-size: 12px;
 }
 #block-block-16 .option {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
+  margin-bottom: 0;
 }
 #block-block-16 .form-group {
   margin-bottom: 0;

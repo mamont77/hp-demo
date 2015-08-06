@@ -35,8 +35,9 @@
 
 #block-block-15 {
   .block-title {
-    font-size: 20px;
-    color: #a39a9a;
+    color: #999;
+    font-size: 17px;
+    padding-top: 6px;
   }
   ul {
     padding: 0;
@@ -45,7 +46,7 @@
   li {
     list-style: none;
     list-style-image: none;
-    font-size: 15px;
+    font-size: 12px;
     a {
       color: #2b3b50;
     }
@@ -96,12 +97,13 @@ $select-color-6: #8724e3;
     background-color: $select-color-6;
   }
   label {
-    font-size: 14px;
+    font-size: 12px;
 
   }
   .option {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: normal;
+    margin-bottom: 0;
   }
   .form-group {
     margin-bottom: 0;
