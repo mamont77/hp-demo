@@ -1,11 +1,13 @@
 .view-id-front {
   .row {
     margin-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
   }
   .views-field-field-image {
     margin-bottom: 10px;
-
-
+    img {
+      margin: 0 auto;
+    }
   }
   .views-field-title {
     margin-bottom: 10px;
@@ -14,13 +16,11 @@
     a {
       color: #4f4f4f;
     }
-
   }
   .views-field-field-price {
     margin-bottom:10px;
     font-size: 26px;
     color: #9d9338;
-
   }
   .views-field-field-best-seller-text {
     margin-bottom: 10px;

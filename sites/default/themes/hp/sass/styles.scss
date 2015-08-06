@@ -63,6 +63,12 @@ a {
   }
 }
 
+.left-sidebar {
+  .region {
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
 .stars {
   width: 80px;
   height: 18px;
@@ -241,6 +247,7 @@ a {
 .footer {
   background-color: $header-bg-color;
   width: 100% !important;
+  margin-top: 0;
   .block {
     margin-bottom: 15px;
   }

@@ -47,6 +47,10 @@ a {
   border-color: #dfd8a4;
 }
 
+.left-sidebar .region {
+  border-right: 1px solid #e5e5e5;
+}
+
 .stars {
   width: 80px;
   height: 18px;
@@ -216,6 +220,7 @@ a {
 .footer {
   background-color: #9d9338;
   width: 100% !important;
+  margin-top: 0;
 }
 .footer .block {
   margin-bottom: 15px;
@@ -389,9 +394,13 @@ a {
 
 .view-id-front .row {
   margin-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .view-id-front .views-field-field-image {
   margin-bottom: 10px;
+}
+.view-id-front .views-field-field-image img {
+  margin: 0 auto;
 }
 .view-id-front .views-field-title {
   margin-bottom: 10px;
