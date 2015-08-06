@@ -70,20 +70,20 @@ a {
 }
 
 .stars {
-  width: 80px;
+  width: 103px;
   height: 18px;
   position: relative;
-  background-image: url(http://g-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-d8065a46f85a138c33afba7d2eb61649e3de663e._V2_.png);
+  background-image: url(../images/stars.png);
   background-repeat: no-repeat;
-  -webkit-background-size: 400px 650px;
-  background-size: 400px 650px;
+  //-webkit-background-size: 400px 650px;
+  //background-size: 343px 60px;
   display: inline-block;
   vertical-align: top;
 }
 
-.star-4-5 {
-  background-position: -175px -368px;
-}
+//.star-4-5 {
+//  background-position: -175px -368px;
+//}
 
 .field-name-field-best-seller-text {
   background-image: none !important;
