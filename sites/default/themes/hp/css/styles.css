@@ -217,7 +217,7 @@ a {
 
 .footer {
   background-color: #9d9338;
-  width: 100%;
+  width: 100% !important;
 }
 .footer .block {
   margin-bottom: 15px;
@@ -414,4 +414,10 @@ a {
 .view-id-front .views-field-nothing {
   margin-bottom: 10px;
   font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1400px;
+  }
 }

@@ -241,7 +241,7 @@ a {
 
 .footer {
   background-color: $header-bg-color;
-  width: 100%;
+  width: 100% !important;
   .block {
     margin-bottom: 15px;
   }
