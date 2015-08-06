@@ -66,7 +66,6 @@ a {
 .field-name-field-best-seller-text {
   background-image: none !important;
   border-radius: 3px 0 0 3px;
-  padding: 4px 5px 4px 6px;
   color: #fff;
   font-style: normal;
   position: relative;
@@ -74,8 +73,7 @@ a {
   margin-right: 4px;
   background-color: #dd7c00;
   font-size: 12px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding: 7px;
   line-height: 14px;
   font-weight: 400;
   display: inline-block;
