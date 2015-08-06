@@ -9,3 +9,4 @@ sites/*/private
 /_db
 .sass-cache
 Thumbs.db
+/sxd
