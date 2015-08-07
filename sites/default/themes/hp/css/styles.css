@@ -416,12 +416,8 @@ a {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1400px;
-  }
-
   .footer .row {
-    width: 1400px;
+    width: 1170px;
     margin: 0 auto;
   }
 }
