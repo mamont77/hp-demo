@@ -210,17 +210,20 @@
 ): ?>
     <footer class="footer <?php print $container_class; ?>">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-15 col-sm-3">
                 <?php print render($page['footer_1']); ?>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-15 col-sm-3">
                 <?php print render($page['footer_2']); ?>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-15 col-sm-3">
                 <?php print render($page['footer_3']); ?>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-15 col-sm-3">
                 <?php print render($page['footer_4']); ?>
+            </div>
+            <div class="col-md-15 col-sm-3">
+                <?php print render($page['footer_5']); ?>
             </div>
         </div>
 

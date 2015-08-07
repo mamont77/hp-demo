@@ -109,3 +109,27 @@ $select-color-6: #8724e3;
     margin-bottom: 0;
   }
 }
+
+#block-block-17 {
+  .jumbotron {
+    -webkit-box-shadow: -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow:         -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+    background-color: #97b1c5;
+    font-size: 12px;
+    padding: 10px 15px;
+    color: #666;
+    p {
+      font-size: 12px;
+    }
+    .btn {
+      float: right;
+    }
+  }
+}
+
+#block-block-18 {
+  .socials {
+    text-align: right;
+  }
+}

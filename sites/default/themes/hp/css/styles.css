@@ -386,6 +386,26 @@ a {
   margin-bottom: 0;
 }
 
+#block-block-17 .jumbotron {
+  -webkit-box-shadow: -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+  background-color: #97b1c5;
+  font-size: 12px;
+  padding: 10px 15px;
+  color: #666;
+}
+#block-block-17 .jumbotron p {
+  font-size: 12px;
+}
+#block-block-17 .jumbotron .btn {
+  float: right;
+}
+
+#block-block-18 .socials {
+  text-align: right;
+}
+
 .view-id-front .row {
   margin-bottom: 15px;
   border-bottom: 1px solid #e5e5e5;
@@ -419,5 +439,38 @@ a {
   .footer .row {
     width: 1170px;
     margin: 0 auto;
+  }
+}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
   }
 }

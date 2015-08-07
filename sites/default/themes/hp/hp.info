@@ -21,6 +21,7 @@ regions[footer_1]       = 'Sub Footer 1'
 regions[footer_2]       = 'Sub Footer 2'
 regions[footer_3]       = 'Sub Footer 3'
 regions[footer_4]       = 'Sub Footer 4'
+regions[footer_5]       = 'Sub Footer 5'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
