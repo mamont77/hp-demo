@@ -2,13 +2,19 @@
   margin-bottom: 15px;
 }
 
+#block-search-form {
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
 .sub-menu-wrapper {
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
-  -webkit-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.1);
-  -moz-box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.1);
-  box-shadow: 0px 3px 15px 0px rgba(50, 50, 50, 0.1);
+  -webkit-box-shadow: 0 3px 15px 0 rgba(50, 50, 50, 0.1);
+  -moz-box-shadow: 0 3px 15px 0 rgba(50, 50, 50, 0.1);
+  box-shadow: 0 3px 15px 0 rgba(50, 50, 50, 0.1);
 }
 
 #block-menu-menu-submenu {
@@ -24,6 +30,7 @@
       a {
         color: #000;
         font-size: 15px;
+        padding: 10px 5px;
         &:hover {
           color: #666;
           background-color: transparent;
@@ -113,8 +120,8 @@ $select-color-6: #8724e3;
 #block-block-17 {
   .jumbotron {
     -webkit-box-shadow: -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
-    box-shadow:         -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
+    box-shadow: -1px -1px 5px 0 rgba(50, 50, 50, 0.75);
     background-color: #97b1c5;
     font-size: 12px;
     padding: 10px 15px;
