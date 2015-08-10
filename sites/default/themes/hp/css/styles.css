@@ -52,12 +52,12 @@ a {
 
 .stars {
   width: 86px;
-  height: 15px;
+  vertical-align: middle;
+  height: 19px;
   position: relative;
   background-image: url(../images/stars.png);
   background-repeat: no-repeat;
   display: inline-block;
-  vertical-align: top;
 }
 
 .field-name-field-best-seller-text {
@@ -421,14 +421,14 @@ a {
 .view-id-front .views-field-title {
   margin-bottom: 10px;
   font-family: "Trade Gothic", Arial, sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 .view-id-front .views-field-title a {
   color: #4f4f4f;
 }
 .view-id-front .views-field-field-price {
   margin-bottom: 10px;
-  font-size: 26px;
+  font-size: 20px;
   color: #9d9338;
 }
 .view-id-front .views-field-field-best-seller-text {
