@@ -166,7 +166,7 @@
         <div class="col-xs-12 col-sm-2 col-md-2">
             <div class="add-to-card-wrapper">
                 <a class="btn btn-default btn-lg" href="/node/246">Add to
-                    card</a>
+                    cart</a>
             </div>
 
         </div>
