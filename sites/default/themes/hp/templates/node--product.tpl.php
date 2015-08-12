@@ -81,103 +81,125 @@
 ?>
 <article id="node-<?php print $node->nid; ?>"
          class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-    <?php if ((!$page && !empty($title)) || !empty($title_prefix)
-      || !empty($title_suffix)
-      || $display_submitted
-    ): ?>
-        <header>
-            <?php print render($title_prefix); ?>
-            <?php if (!$page && !empty($title)): ?>
-                <h2<?php print $title_attributes; ?>><a
-                      href="<?php print $node_url; ?>"><?php print $title; ?></a>
-                </h2>
-            <?php endif; ?>
-            <?php print render($title_suffix); ?>
-            <?php if ($display_submitted): ?>
-                <span class="submitted">
+  <?php if ((!$page && !empty($title)) || !empty($title_prefix)
+    || !empty($title_suffix)
+    || $display_submitted
+  ): ?>
+    <header>
+      <?php print render($title_prefix); ?>
+      <?php if (!$page && !empty($title)): ?>
+        <h2<?php print $title_attributes; ?>><a
+            href="<?php print $node_url; ?>"><?php print $title; ?></a>
+        </h2>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php if ($display_submitted): ?>
+        <span class="submitted">
       <?php print $user_picture; ?>
       <?php print $submitted; ?>
     </span>
-            <?php endif; ?>
-        </header>
-    <?php endif; ?>
-    <?php
-    // Hide comments, tags, and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    hide($content['field_image']);
-    hide($content['field_price']);
-    hide($content['field_tags']);
-    ?>
-    <div class="row product-data">
-        <div class="col-xs-12 col-sm-4 col-md-4">
+      <?php endif; ?>
+    </header>
+  <?php endif; ?>
+  <?php
+  // Hide comments, tags, and links now so that we can render them later.
+  hide($content['comments']);
+  hide($content['links']);
+  hide($content['field_image']);
+  hide($content['field_price']);
+  hide($content['field_tags']);
+  hide($content['field_stars_amount']);
+  hide($content['field_reviews_amount']);
+  hide($content['field_stars_by_reviews']);
+  ?>
+  <div class="row product-data">
+    <div class="col-xs-12 col-sm-4 col-md-4">
 
-            <div class="clearfix">
-                <?php
-                print render($content['field_image']);
-                ?>
-            </div>
-            <div class="roll-wrapper">
-                <div class="roll-over">Roll over image to zoom in</div>
-                <div class="roll-over">
-                    <a href="#" class="open-as-popup colorbox-load" rel="">Сlick for a larger image</a>
-                </div>
-            </div>
-
-
+      <div class="clearfix">
+        <?php
+        print render($content['field_image']);
+        ?>
+      </div>
+      <div class="roll-wrapper">
+        <div class="roll-over">Roll over image to zoom in</div>
+        <div class="roll-over">
+          <a href="#" class="open-as-popup colorbox-load" rel="">Сlick for a
+            larger image</a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <?php print render($title_prefix); ?>
-            <?php if (!empty($title)): ?>
-                <h1 class="page-header"><?php print $title; ?></h1>
-            <?php endif; ?>
-
-            <div class="price">
-                <?php
-                print render($content['field_price']);
-                ?>
-            </div>
+      </div>
 
 
-            <?php if (isset($content['field_best_seller_text'])
-              && !empty($content['field_best_seller_text'])): ?>
-                <div class="best-seller">
-                    <?php
-                    print render($content['field_best_seller_text']);
-                    ?>
-                </div>
-            <?php endif; ?>
-
-            <div class="clearfix">
-
-                <?php
-                print render($content['field_product_description']);
-                ?>
-            </div>
-            <div class="rate">
-                <span class="stars star-4-5"></span>
-                <a href="#">1,021</a> customer reviews
-            </div>
-
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2">
-            <div class="add-to-card-wrapper">
-                <a class="btn btn-default btn-lg" href="/node/246">Add to
-                    cart</a>
-            </div>
-
-        </div>
     </div>
-    <?php
-    print render($content);
-    ?>
-    <?php if (!empty($content['field_tags'])
-      || !empty($content['links'])
-    ): ?>
-        <footer>
-            <?php print render($content['field_tags']); ?>
-            <?php print render($content['links']); ?>
-        </footer>
-    <?php endif; ?>
-    <?php print render($content['comments']); ?>
+    <div class="col-xs-12 col-sm-6 col-md-6">
+      <?php print render($title_prefix); ?>
+      <?php if (!empty($title)): ?>
+        <h1 class="page-header"><?php print $title; ?></h1>
+      <?php endif; ?>
+
+      <div class="price">
+        <?php
+        print render($content['field_price']);
+        ?>
+      </div>
+
+
+      <?php if (isset($content['field_best_seller_text'])
+        && !empty($content['field_best_seller_text'])
+      ): ?>
+        <div class="best-seller">
+          <?php
+          print render($content['field_best_seller_text']);
+          ?>
+        </div>
+      <?php endif; ?>
+
+      <div class="clearfix">
+
+        <?php
+        print render($content['field_product_description']);
+        ?>
+      </div>
+      <?php
+      $stars = $content['field_stars_amount'];
+      $stars = field_get_items('node', $node, 'field_stars_amount');
+      if ($stars) {
+        $stars = field_view_value(
+          'node',
+          $node,
+          'field_stars_amount',
+          $stars[0]
+        );
+        $stars = $stars['#markup'];
+        $stars = explode('.', $stars);
+        $stars = $stars[0] . '-' . $stars[1];
+      }
+      ?>
+      <div class="rate">
+        <span class="stars votes-<?php print $stars; ?>"></span>
+        <a href="#"> <?php
+          print render($content['field_reviews_amount']);
+          ?></a> customer reviews
+      </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2">
+      <div class="add-to-card-wrapper">
+        <a class="btn btn-default btn-lg" href="/node/246">Add to
+          cart</a>
+      </div>
+
+    </div>
+  </div>
+  <?php
+  print render($content);
+  ?>
+  <?php if (!empty($content['field_tags'])
+    || !empty($content['links'])
+  ): ?>
+    <footer>
+      <?php print render($content['field_tags']); ?>
+      <?php print render($content['links']); ?>
+    </footer>
+  <?php endif; ?>
+  <?php print render($content['comments']); ?>
 </article>

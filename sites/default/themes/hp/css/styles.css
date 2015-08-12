@@ -51,13 +51,54 @@ a {
 }
 
 .stars {
-  width: 86px;
+  width: 75px;
   vertical-align: middle;
   height: 19px;
   position: relative;
-  background-image: url(../images/stars.png);
+  background-image: url(../images/stars_sprite_fin.png);
   background-repeat: no-repeat;
   display: inline-block;
+  background-position: 0 0;
+}
+
+.votes-1-0,
+.votes-1-00 {
+  background-position: -60px 0;
+}
+
+.votes-1-5,
+.votes-1-50 {
+  background-position: -203px 0;
+}
+
+.votes-2-0,
+.votes-2-00 {
+  background-position: -45px 0;
+}
+
+.votes-2-5,
+.votes-2-50 {
+  background-position: -188px 0;
+}
+
+.votes-3-0,
+.votes-3-00 {
+  background-position: -30px 0;
+}
+
+.votes-3-5,
+.votes-3-50 {
+  background-position: -173px 0;
+}
+
+.votes-4-0,
+.votes-4-00 {
+  background-position: -15px 0;
+}
+
+.votes-4-5,
+.votes-4-50 {
+  background-position: -158px 0;
 }
 
 .field-name-field-best-seller-text {
@@ -167,6 +208,12 @@ a {
   font-size: 20px;
   font-weight: bold;
   color: #9d9338;
+}
+.node-type-product .field-name-field-reviews-amount {
+  display: inline;
+}
+.node-type-product .field-name-field-reviews-amount div {
+  display: inline;
 }
 .node-type-product .field-label {
   font-size: 16px;
