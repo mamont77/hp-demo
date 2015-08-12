@@ -176,7 +176,7 @@
       ?>
       <div class="rate">
         <span class="stars votes-<?php print $stars; ?>"></span>
-        <a href="#"> <?php
+        <a href="#reviews"> <?php
           print render($content['field_reviews_amount']);
           ?></a> customer reviews
       </div>
