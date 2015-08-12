@@ -120,9 +120,7 @@
             <div class="roll-wrapper">
                 <div class="roll-over">Roll over image to zoom in</div>
                 <div class="roll-over">
-                    <a href="#" class="open-as-popup colorbox-load" rel="">Open
-                        as
-                        popup</a>
+                    <a href="#" class="open-as-popup colorbox-load" rel="">Сlick for a larger image</a>
                 </div>
             </div>
 
@@ -158,8 +156,7 @@
             </div>
             <div class="rate">
                 <span class="stars star-4-5"></span>
-                <a href="#">1,021</a> customer reviews | <a href="#">225</a>
-                answered questions
+                <a href="#">1,021</a> customer reviews
             </div>
 
         </div>
