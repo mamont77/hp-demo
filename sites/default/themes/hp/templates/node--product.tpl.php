@@ -170,8 +170,6 @@
           $stars[0]
         );
         $stars = $stars['#markup'];
-        $stars = explode('.', $stars);
-        $stars = $stars[0] . '-' . $stars[1];
       }
       ?>
       <div class="rate">
