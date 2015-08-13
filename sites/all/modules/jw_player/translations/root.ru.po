@@ -1,0 +1,111 @@
+# Russian translation of jw_player (all releases)
+# Copyright (c) 2012 by the Russian translation team
+# Generated from files:
+#  jw_player/jw_player.module: n/a
+#  jw_player/jw_player.install: n/a
+#  jw_player/jw_player.info: n/a
+#  jw_player/jw_player.admin.inc: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: jw_player (all releases)\n"
+"POT-Creation-Date: 2012-06-25 04:30-0400\n"
+"PO-Revision-Date: 2010-07-17 06:46-0400\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+
+#: jw_player.module:98,117,118,135
+msgid "Default"
+msgstr "По умолчанию"
+
+#: jw_player.module:12,12
+msgid "Settings"
+msgstr "Настройки"
+
+#: jw_player.module:143,143,142
+msgid "default"
+msgstr "по умолчанию"
+
+#: jw_player.install:79,80,80
+msgid "Installed correctly"
+msgstr "Установленный правильно"
+
+#: jw_player.module:101,101,100
+msgid "Create new preset"
+msgstr ""
+
+#: jw_player.module:78,79,96,105,105,104
+msgid "Manage presets"
+msgstr ""
+
+#: jw_player.module:94,113,114,131,136,136,135
+msgid "Description: @description"
+msgstr ""
+
+#: jw_player.module:13,30,30
+msgid "administer JW Player presets"
+msgstr ""
+
+#: jw_player.module:14,31,31
+msgid "Perform administration of JW Player presets"
+msgstr ""
+
+#: jw_player.module:42,43,60,60,59
+msgid "JW player"
+msgstr ""
+
+#: jw_player.module:93,112,113,130,135,135,134
+msgid "Preset: @name"
+msgstr ""
+
+#: jw_player.module:98,117,118,135,143,143,142
+msgid "@key: @val"
+msgstr ""
+
+#: jw_player.module:102,121,122,139,148,148,147
+msgid "No preset selected"
+msgstr ""
+
+#: jw_player.install:73,74,74
+msgid "The file %file is not present in the directory %directory"
+msgstr ""
+
+#: jw_player.install:79,80,80
+msgid "Please consult INSTALL.txt for installation instructions."
+msgstr ""
+
+#: jw_player.info:0,0
+msgid ""
+"Adds a theme function which allows theme developers to use the JW "
+"Player"
+msgstr ""
+
+#: jw_player.module:70,71,88
+msgid "No preset is available yet. You need to create a preset to proceed."
+msgstr ""
+
+#: jw_player.admin.inc:17,17
+msgid "Use inline javascript"
+msgstr ""
+
+#: jw_player.admin.inc:18,18
+msgid ""
+"With this option enabled JW Player configuration will be printed "
+"inline directly after the player markup. This can be useful if the "
+"player markup is cached as otherwise JW Player will not be loaded. The "
+"downside is that the player itself will be loaded on all pages."
+msgstr ""
+
+#: jw_player.module:92,92,91
+msgid "Select preset"
+msgstr ""
+
+#: jw_player.module:113,113,112
+msgid ""
+"No presets are available. You must to <a href=\"@create\">create a "
+"preset</a> to proceed."
+msgstr ""
+

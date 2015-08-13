@@ -1,0 +1,175 @@
+# Russian translation of jw_player (all releases)
+# Copyright (c) 2012 by the Russian translation team
+# Generated from file: jw_player/plugins/export_ui/jw_player_ctools_export_ui.inc: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: jw_player (all releases)\n"
+"POT-Creation-Date: 2012-06-25 04:30-0400\n"
+"PO-Revision-Date: 2011-04-02 17:24-0400\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((((n%10)==1)&&((n%100)!=11))?(0):(((((n%10)>=2)&&((n%10)<=4))&&(((n%100)<10)||((n%100)>=20)))?(1):2));\n"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:80,68,68
+msgid "Description"
+msgstr "Описание"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:116,122,122
+msgid "Top"
+msgstr "Верх"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:115,121,121
+msgid "Bottom"
+msgstr "Низ"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:59,54,54
+msgid "Machine name"
+msgstr "Компьютерное название"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:89,95,95
+msgid "Width"
+msgstr "Ширина"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:100,106,106
+msgid "Height"
+msgstr "Высота"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:114,120,120
+msgid "None"
+msgstr "Нет"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:185,191,191
+msgid "Enable"
+msgstr "Включить"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:160,166,166
+msgid "Skin"
+msgstr "Скин"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:168,214,221,221
+msgid "Autoplay"
+msgstr "Автовоспроизведение"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:51,46,46
+msgid "Preset name"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:91,102,97,108,97,108
+msgid "pixels"
+msgstr "пикселей"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:89
+msgid "width"
+msgstr "ширина"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:67
+msgid ""
+"Enter the name to the new page It must be unique and contain only "
+"alphanumeric characters and underscores."
+msgstr ""
+"Введите название новой страницы. Оно "
+"должно быть уникальным, а также может "
+"содержать только символы английского "
+"алфавита и знак подчёркивания."
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:117,123,123
+msgid "Over"
+msgstr "Поверх"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:17,17
+msgid "presets"
+msgstr "пресеты"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:16,16
+msgid "preset"
+msgstr "пресет"
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:18,18
+msgid "JW Player preset"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:52
+msgid "Enter name for the preet."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:80
+msgid "decription"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:81
+msgid "Summary for preset"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:90
+msgid "Enter width for player."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:101
+msgid "Enter height for player"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:109,115,115
+msgid "Controlbar Position"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:111
+msgid "The positon of the controlbar"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:163,169,169
+msgid "None (default skin)"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:170,216,223,223
+msgid "Set the video to autoplay on page load"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:52,47,47
+msgid "Enter name for the preset."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:67,62,62
+msgid ""
+"Enter the machine name for the preset. It must be unique and contain "
+"only alphanumeric characters and underscores."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:81,69,69
+msgid "Summary for the preset."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:90,96,96
+msgid "Enter the width for this player."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:101,107,107
+msgid "Enter the height for this player."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:111,117,117
+msgid "Where the controlbar should be positioned."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:83,83
+msgid "Embed mode"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:84,84
+msgid ""
+"Select your primary embed mode. Choosing HTML5 primary means that "
+"modern browsers that also support flash will use the HTML5 player "
+"first where possible. While this is desirable, the Flash based player "
+"supports more features and is generally more reliable."
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:86,86
+msgid "Flash primary, HTML5 failover"
+msgstr ""
+
+#: plugins/export_ui/jw_player_ctools_export_ui.inc:87,87
+msgid "HTML5 primary, Flash failover"
+msgstr ""
+
