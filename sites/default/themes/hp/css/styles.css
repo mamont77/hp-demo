@@ -169,6 +169,15 @@ a {
   display: block;
   float: none;
   margin: 5px 0;
+  color: #fff;
+  border: none;
+}
+.node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery:hover, .node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery:focus, .node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery:active,
+.node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery-video:hover,
+.node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery-video:focus,
+.node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery-video:active {
+  color: #fff;
+  border: none;
 }
 .node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery img,
 .node-type-product .cloud-zoom-container .cloud-zoom-gallery-thumbs .cloud-zoom-gallery-video img {
