@@ -69,24 +69,8 @@
       $rollWrapper.appendTo($('#wrap'));
 
       if ($videoField.length > 0) {
-        $('.cloud-zoom-gallery-thumbs', context).append('<a href="#" ' +
-          'class="cloud-zoom-gallery-video video_icon">' +
-          '<img src="/sites/default/themes/hp/images/video_preview.png" width="40" height="40" alt="">' +
-          '</a>');
-        $videoField.prependTo($('.cloud-zoom-container', context));
-        $('.video_icon').on('click', function (event) {
-          event.preventDefault();
-          $('#wrap', context).hide();
-          //$('.roll-wrapper', context).hide();
-          $videoField.show();
-          return false;
-        });
-        $('.cloud-zoom-gallery').on('click', function () {
-          $videoField.hide();
-          $('#wrap', context).show();
-          //$('.roll-wrapper', context).removeClass('roll-hidden');
-        });
-
+        //$videoField.find('.jwplayer-video').attr('id', 'show-video');
+        $('.cloud-zoom-gallery-thumbs', context).append($('.cloud-zoom-gallery-video', context));
       }
     }
   };

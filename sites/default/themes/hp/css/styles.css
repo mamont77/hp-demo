@@ -383,12 +383,13 @@ a {
   background: none transparent;
 }
 
+.a-video-wrapper,
 .field-name-field-video {
   display: none;
-  top: 0;
-  z-index: 9999;
-  position: relative;
-  float: right !important;
+}
+
+.jwplayer-video img {
+  display: none !important;
 }
 
 .navbar-default {

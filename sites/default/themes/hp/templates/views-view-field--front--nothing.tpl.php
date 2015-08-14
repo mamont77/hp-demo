@@ -30,10 +30,10 @@ $field_stars_by_reviews = (!empty($row->field_field_stars_by_reviews)) ? $row->f
 $field_stars_by_reviews = explode('-', $field_stars_by_reviews);
 $stars_by_reviews = array();
 foreach ($field_stars_by_reviews as $reviews) {
-$reviews = explode(':', $reviews);
-$stars_by_reviews[$reviews[0]] = $reviews[1];
+  $reviews = explode(':', $reviews);
+  $stars_by_reviews[$reviews[0]] = $reviews[1];
 }
-$stars_by_reviews = array_reverse($stars_by_reviews, true);
+$stars_by_reviews = array_reverse($stars_by_reviews, TRUE);
 
 $field_stars_amount_float = explode('-', $field_stars_amount);
 $field_stars_amount_float = implode('.', $field_stars_amount_float);
@@ -41,7 +41,7 @@ $field_stars_amount_float = implode('.', $field_stars_amount_float);
 $data = '<div class=\'header\'>' . $field_stars_amount_float . ' out of 5 stars</div>';
 $data .= '<table>';
 foreach ($stars_by_reviews as $key => $item) {
-$data .= '
+  $data .= '
 <tr>
 <td>
 <a class=\'rating\' href=\''. url('node/' . $row->nid) . '#reviews\'>' . $key . ' star</a>

@@ -79,6 +79,7 @@
  * @ingroup themeable
  */
 ?>
+
 <article id="node-<?php print $node->nid; ?>"
          class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix)
@@ -201,3 +202,6 @@
   <?php endif; ?>
   <?php print render($content['comments']); ?>
 </article>
+<div class="a-video-wrapper">
+  <a class="cloud-zoom-gallery-video video_icon colorbox-inline" href="?inline=true#show-video"><img src="/sites/default/themes/hp/images/video_preview.png" width="40" height="40" alt=""></a>
+</div>
